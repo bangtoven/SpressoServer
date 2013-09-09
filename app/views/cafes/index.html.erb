@@ -1,0 +1,39 @@
+<h1>Listing cafes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Seat</th>
+    <th>Wifi</th>
+    <th>Discount</th>
+    <th>Open hour</th>
+    <th>Open hour fri</th>
+    <th>Open hour wknd</th>
+    <th>Open hour etc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cafes.each do |cafe| %>
+  <tr>
+    <td><%= cafe.name %></td>
+    <td><%= cafe.location %></td>
+    <td><%= cafe.seat %></td>
+    <td><%= cafe.wifi %></td>
+    <td><%= cafe.discount %></td>
+    <td><%= cafe.open_hour %></td>
+    <td><%= cafe.open_hour_fri %></td>
+    <td><%= cafe.open_hour_wknd %></td>
+    <td><%= cafe.open_hour_etc %></td>
+    <td><%= link_to 'Show', cafe %></td>
+    <td><%= link_to 'Edit', edit_cafe_path(cafe) %></td>
+    <td><%= link_to 'Destroy', cafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cafe', new_cafe_path %>

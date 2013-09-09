@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cafe.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @cafe.location %>
+</p>
+
+<p>
+  <b>Seat:</b>
+  <%= @cafe.seat %>
+</p>
+
+<p>
+  <b>Wifi:</b>
+  <%= @cafe.wifi %>
+</p>
+
+<p>
+  <b>Discount:</b>
+  <%= @cafe.discount %>
+</p>
+
+<p>
+  <b>Open hour:</b>
+  <%= @cafe.open_hour %>
+</p>
+
+<p>
+  <b>Open hour fri:</b>
+  <%= @cafe.open_hour_fri %>
+</p>
+
+<p>
+  <b>Open hour wknd:</b>
+  <%= @cafe.open_hour_wknd %>
+</p>
+
+<p>
+  <b>Open hour etc:</b>
+  <%= @cafe.open_hour_etc %>
+</p>
+
+<p>
+  <b><%= link_to 'Menus', cafe_menus_path(@cafe) %></b>
+</p>
+
+<%= link_to 'Edit', edit_cafe_path(@cafe) %> |
+<%= link_to 'Back', cafes_path %>

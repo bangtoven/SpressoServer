@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  location: MyString
+  seat: false
+  wifi: false
+  discount: MyString
+  open_hour: MyString
+  open_hour_fri: MyString
+  open_hour_wknd: MyString
+  open_hour_etc: MyString
+
+two:
+  name: MyString
+  location: MyString
+  seat: false
+  wifi: false
+  discount: MyString
+  open_hour: MyString
+  open_hour_fri: MyString
+  open_hour_wknd: MyString
+  open_hour_etc: MyString

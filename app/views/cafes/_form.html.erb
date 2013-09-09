@@ -1,0 +1,53 @@
+<%= form_for(@cafe) do |f| %>
+  <% if @cafe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cafe.errors.count, "error") %> prohibited this cafe from being saved:</h2>
+
+      <ul>
+      <% @cafe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :seat %><br />
+    <%= f.check_box :seat %>
+  </div>
+  <div class="field">
+    <%= f.label :wifi %><br />
+    <%= f.check_box :wifi %>
+  </div>
+  <div class="field">
+    <%= f.label :discount %><br />
+    <%= f.text_field :discount %>
+  </div>
+  <div class="field">
+    <%= f.label :open_hour %><br />
+    <%= f.text_field :open_hour %>
+  </div>
+  <div class="field">
+    <%= f.label :open_hour_fri %><br />
+    <%= f.text_field :open_hour_fri %>
+  </div>
+  <div class="field">
+    <%= f.label :open_hour_wknd %><br />
+    <%= f.text_field :open_hour_wknd %>
+  </div>
+  <div class="field">
+    <%= f.label :open_hour_etc %><br />
+    <%= f.text_field :open_hour_etc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
